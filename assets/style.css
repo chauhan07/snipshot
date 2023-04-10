@@ -662,6 +662,7 @@ header .social ul li {
 .downBnrBtn.dark {
     margin: 40px auto 0;
     background: #69c1d3;
+    color: #fff;
 }
 
 .downBnrBtn.dark::before {
