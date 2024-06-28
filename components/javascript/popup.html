@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDGGTKJ');</script>
+<!-- End Google Tag Manager -->
+	
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/fav.png">
+
+    <!-- meta tags -->
+    <title>SnipShot | Shopify Snippets</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://chauhan07.github.io/snipshot/">
+    <meta name="robots" content="index,follow">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="SnipShot - Shopify Code Snippets">
+    <meta property="og:description" content="Find the most useful Shopify code snippets to help you build your website. Get easy-to-implement code solutions for common Shopify tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your Shopify development with our collection of code snippets.">
+
+    <meta property="og:image" content="https://chauhan07.github.io/snipshot/">
+    <meta property="og:url" content="https://chauhan07.github.io/snipshot/assets/images/og_image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/style.css" rel="stylesheet">
+    <!-- <link href="../../assets/css/style.css" rel="stylesheet"> -->
+    <link href="../../assets/prism/prism.css" rel="stylesheet">
+    <link href="../../assets/line-number/line-number.css" rel="stylesheet">
+    <script src="../../assets/prism/prism.js"></script>
+    <script src="../../assets/line-number/line-number.js"></script>
+
+</head>
+
+<body>
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDGGTKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<section class="main">
+    <header class="container-fluid  darkHdr">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-flex align-items-center">
+                    <div class="inner d-flex justify-content-center justify-content-sm-start">
+                        <h1 class="logoText">
+                            <a href="./">
+                                <span>&lt;</span> SnipShot
+                                <span>/&gt;</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-sm-flex">
+                    <div class="inner d-flex justify-content-end social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/chauhan07" target="_blank">
+                                    <img src="../../assets/images/github.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/adityachauhan" target="_blank">
+                                    <img src="../../assets/images/codepen.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ad1tya.rana/" target="_blank">
+                                    <img src="../../assets/images/instagram.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="ap_wrapper">
+        <div class="ap_newDesign left" id="sideBar">
+            <div class="inner">
+                <ul>
+                    <li class="general">
+                        <img src="../../assets/images/book.png" alt="">Getting Started
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="../../javascript.html">
+                            Basic Function
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./custom-input-file.html">
+                            Input File
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./popup.html">
+                            Popup
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./form-validation.html">
+                            Forms Validation
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ap_right_box">
+            <div class="inner_box">
+                <div class="right">
+
+                    <div class="top_hdng">
+                        <h3 class="hdng">
+                            Get started with JN Snippets
+                        </h3>
+                        <p>
+                            Step-by-Step Guide to setup a popup
+                        </p>
+                    </div>
+
+                    <ul>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 1: Add the Popup Button</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    To create a button that opens a popup, use the following attributes:
+                                    <br><br>
+                                    <b>1. </b>`data-popup="open_modal"` 
+                                    <br>
+                                    <b>2. </b>`data-p-call="jn-popup-1"`
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">// Buttons for Popup
+&lt;button class="button_popup" data-popup="open_modal" data-p-call="jn-popup-1"&gt;
+    Open Popup 
+&lt;/button&gt;
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 2: Create the Popup Structure</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    The popup holder must have the class <strong>`.jn_popup`</strong> to control the show/hide functionality. Additionally, use the <strong>`data-p-target`</strong> attribute to link the popup with the button.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">// Popup Holder
+&lt;section class="jn_popup" tabindex="-1" data-p-target="jn-popup-1"&gt;
+    &lt;div class="jn_dialog"&gt;
+        &lt;div class="jn_content_wrap"&gt;
+            &lt;div class="jn_header"&gt;
+                &lt;h5 class="hdr_hdng"&gt;Popup Title&lt;/h5&gt;
+                &lt;button class="close_hdr" data-popup="close_modal" data-p-call="jn-popup-1"&gt;Close&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="jn_content"&gt;
+                &lt;h3&gt;What is Lorem Ipsum?&lt;/h3&gt;
+                &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="jn_footer"&gt;
+                &lt;button class="close_ftr" data-popup="close_modal" data-p-call="jn-popup-1"&gt;Close&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Handling Multiple Popups</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    To handle multiple popups on the same page, increment the data-p-call value for each button and corresponding popup holder.
+                                    <br><br>
+                                    <b>Example for Multiple Popups:</b>
+                                    <br>
+                                    <b>Button for First Popup</b>
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">// Buttons for Popup
+&lt;button class="button_popup" data-popup="open_modal" data-p-call="jn-popup-1"&gt;
+    Open Popup 1
+&lt;/button&gt;
+</code>
+                                </pre>
+                                </span>
+                                
+                                <p class="topicDesc">
+                                    <b>Popup 1 Holder:</b>
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">// Buttons Holder
+&lt;section class="jn_popup" tabindex="-1" data-p-target="jn-popup-1"&gt;
+    &lt;!-- Popup content --&gt;
+&lt;/section&gt;
+</code>
+                                </pre>
+                                </span>
+                                
+                                <p class="topicDesc">
+                                    <b>Button for Second Popup</b>
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">// Buttons for Popup
+&lt;button class="button_popup" data-popup="open_modal" data-p-call="jn-popup-2"&gt;
+    Open Popup 2
+&lt;/button&gt;
+</code>
+                                </pre>
+                                </span>
+                                
+                                <p class="topicDesc">
+                                    <b>Popup 2 Holder:</b>
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">// Buttons Holder
+&lt;section class="jn_popup" tabindex="-1" data-p-target="jn-popup-2"&gt;
+    &lt;!-- Popup content --&gt;
+&lt;/section&gt;
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 3: Add the CSS</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    Here is the CSS to style the popup:
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-css">/* Popup CSS */
+.jn_popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.jn_popup:not(.show){
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.jn_popup.show{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.jn_popup .jn_dialog{
+    width: 600px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+.jn_popup .jn_content_wrap .jn_header,
+.jn_popup .jn_content_wrap .jn_footer{
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.jn_popup .jn_content_wrap .jn_header{
+    border-bottom: 1px solid #000;
+}
+
+.jn_popup .jn_content_wrap .jn_footer{
+    border-top: 1px solid #000;
+}
+
+.jn_popup .jn_content_wrap .jn_header .hdr_hdng{
+    font-size: 24px;
+}
+
+.jn_popup .jn_content_wrap .jn_content{
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+.jn_popup .jn_content_wrap .close_hdr,
+.jn_popup .jn_content_wrap .close_ftr{
+    cursor: pointer;
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 4: Add the JavaScript</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    To manage the popup functionality, use the following JavaScript:
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-js">// JS for Popup
+document.addEventListener('DOMContentLoaded', function() {
+    let showPopup = document.querySelectorAll("[data-popup='open_modal']");
+    let hidePopup = document.querySelectorAll("[data-popup='close_modal']");
+
+    showPopup.forEach(element => {
+        // get which element hit 
+        let pCall = element.getAttribute("data-p-call");
+
+        // set loop for all popups
+        element.addEventListener("click", function(){
+            let pTarget = document.querySelector(`.jn_popup[data-p-target='${pCall}']`);
+            pTarget.classList.add("show");
+        });
+    });
+
+    hidePopup.forEach(element => {
+        // get which element hit 
+        let pCall = element.getAttribute("data-p-call");
+
+        // set loop for all popups
+        element.addEventListener("click", function(){
+            let pTarget = document.querySelector(`.jn_popup[data-p-target='${pCall}']`);
+            pTarget.classList.remove("show");
+        });
+    });
+
+
+    // hide popup on escape click
+    function handleKeyPress(event) {
+        // Check if the pressed key is the 'Esc' key
+        if (event.keyCode === 27) {
+            // Select elements with the class 'modal_wrapper' and remove the 'show' class
+            document.querySelectorAll('.jn_popup').forEach(function(element) {
+            element.classList.remove('show');
+            });
+        }
+    }
+    
+    // Add an event listener to the document to listen for key presses
+    document.addEventListener('keydown', handleKeyPress);
+
+    // hide popup on overlay click
+    document.addEventListener('click', function(e) {
+        // Check if the clicked element has the 'modal_wrapper' class
+        if (e.target.classList.contains('show')) {
+            // Select elements with the class 'modal_wrapper' and remove the 'show' class
+            document.querySelectorAll('.jn_popup').forEach(function(element) {
+                element.classList.remove('show');
+            });
+        }
+    });
+});
+</code>
+                                </pre>
+                                </span>
+                                
+                                <p class="topicDesc">
+                                    <strong>Notes:</strong>
+                                    <br>
+                                    - Ensure each popup button and its corresponding popup holder have matching <b>`data-p-call`</b> and <b>`data-p-target`</b> values respectively.
+                                    <br>
+                                    - Use the <b>`jn_popup`</b> class on the popup holder to manage visibility.
+                                </p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Show Button -->
+        <div class="formButton">
+            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="../../assets/images/contact.png">
+            </a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!--modal-dialog-centered , modal-lg-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="successMessage">
+                            Your Message has been sent.
+                        </div>
+                        <form class="ap_form" method="POST" onsubmit="formSubmitFun(event)" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzrErSoIcF7eF4-fM0GBkBWs9JHHXoHikSfja2WgP77CkOkO4FxWSiEXLze_drOplOBIw/exec">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label>
+                                        Name
+                                        <input type="text" class="form-control" required name="Name">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Email
+                                        <input type="email" class="form-control" required name="Email">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Message
+                                        <textarea class="form-control" required name="Message"></textarea>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        <input type="submit" class="ap_submit" value="Send Message">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="ap_loader">
+                                <div class="lds-spinner">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/confetti/tsparticles.confetti.bundle.min.js"></script>
+    <script src="../../assets/function.js"></script>
+
+</body>
+
+</html>
+

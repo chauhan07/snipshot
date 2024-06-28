@@ -2,189 +2,226 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NDGGTKJ');</script>
 <!-- End Google Tag Manager -->
-	
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="./assets/images/fav.png">
 
-    <!-- meta tags -->
-    <title>SnipShot - Wordpress Code Snippets</title>
-    <meta name="description" content="Find the most useful WordPress code snippets to help you build your website. Get easy-to-implement code solutions for common WordPress tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your WordPress development with our collection of code snippets.">
-    <link rel="canonical" href="https://chauhan07.github.io/snipshot/">
-    <meta name="robots" content="index,follow">
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="./assets/images/fav.png">
 
-    <!-- OG Tags -->
-    <meta property="og:title" content="SnipShot - WordPress Code Snippets">
-    <meta property="og:description" content="Find the most useful WordPress code snippets to help you build your website. Get easy-to-implement code solutions for common WordPress tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your WordPress development with our collection of code snippets.">
+<!-- meta tags -->
+<title>SnipShot - Wordpress Code Snippets</title>
+<meta name="description" content="Find the most useful WordPress code snippets to help you build your website. Get easy-to-implement code solutions for common WordPress tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your WordPress development with our collection of code snippets.">
+<link rel="canonical" href="https://chauhan07.github.io/snipshot/">
+<meta name="robots" content="index,follow">
 
-    <meta property="og:image" content="https://chauhan07.github.io/snipshot/">
-    <meta property="og:url" content="https://chauhan07.github.io/snipshot/assets/images/og_image.png">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
+<!-- OG Tags -->
+<meta property="og:title" content="SnipShot - WordPress Code Snippets">
+<meta property="og:description" content="Find the most useful WordPress code snippets to help you build your website. Get easy-to-implement code solutions for common WordPress tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your WordPress development with our collection of code snippets.">
 
-    <!-- Bootstrap CSS -->
-    <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="./assets/style.css" rel="stylesheet">
-    <link href="./assets/prism/prism.css" rel="stylesheet">
-    <link href="./assets/line-number/line-number.css" rel="stylesheet">
-    <script src="./assets/prism/prism.js"></script>
-    <script src="./assets/line-number/line-number.js"></script>
+<meta property="og:image" content="https://chauhan07.github.io/snipshot/">
+<meta property="og:url" content="https://chauhan07.github.io/snipshot/assets/images/og_image.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+
+<!-- Bootstrap CSS -->
+<link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/style.css" rel="stylesheet">
+<link href="./assets/prism/prism.css" rel="stylesheet">
+<link href="./assets/line-number/line-number.css" rel="stylesheet">
+<script src="./assets/prism/prism.js"></script>
+<script src="./assets/line-number/line-number.js"></script>
 </head>
 
-<body>
-	<!-- Google Tag Manager (noscript) -->
+<body style="background-color:#fff">
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDGGTKJ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<section class="main">
+    <header class="container-fluid  darkHdr">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-flex align-items-center">
+                    <div class="inner d-flex justify-content-center justify-content-sm-start">
+                        <h1 class="logoText">
+                            <a href="./">
+                                <span>&lt;</span> SnipShot
+                                <span>/&gt;</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-sm-flex">
+                    <div class="inner d-flex justify-content-end social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/chauhan07" target="_blank">
+                                    <img src="./assets/images/github.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/adityachauhan" target="_blank">
+                                    <img src="./assets/images/codepen.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ad1tya.rana/" target="_blank">
+                                    <img src="./assets/images/instagram.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="ap_wrapper">
         <div class="ap_newDesign left" id="sideBar">
             <div class="inner">
-                <div class="logoBox">
-                    <a href="./"><span>SnipShot</span></a>
-                    <h1 class="subHdng">Useful Code Snippets of Wordpress</h1>
-                </div>
                 <ul>
+                    <li class="general">
+                        <img src="./assets/images/book.png" alt="">Getting Started
+                    </li>
                     <li data-topic="Basic Functions">
                         <a href="javascript:void(0)" onclick="scrollToSection('aa')">
-                            1. Basic Functions
+                            Basic Functions
                         </a>
                     </li>
                     <li data-topic="Get Logo on Frontend">
                         <a href="javascript:void(0)" onclick="scrollToSection('ab')">
-                            2. Get Logo on Frontend
+                            Get Logo on Frontend
                         </a>
                     </li>
                     <li data-topic="Get Page Featured Image">
                         <a href="javascript:void(0)" onclick="scrollToSection('ac')">
-                            3. Get Page Featured Image
+                            Get Page Featured Image
                         </a>
                     </li>
                     <li data-topic="Get Blog Lisitng Featured Image">
                         <a href="javascript:void(0)" onclick="scrollToSection('ad')">
-                            4. Get Blog Lisitng Featured Image
+                            Get Blog Lisitng Featured Image
                         </a>
                     </li>
                     <li data-topic="Get Categories on Single Post">
                         <a href="javascript:void(0)" onclick="scrollToSection('ae')">
-                            5. Get Categories on Single Post
+                            Get Categories on Single Post
                         </a>
                     </li>
                     <li data-topic="Get Tags on Single Post">
                         <a href="javascript:void(0)" onclick="scrollToSection('af')">
-                            6. Get Tags on Single Post
+                            Get Tags on Single Post
                         </a>
                     </li>
                     <li data-topic="Menu Functions">
                         <a href="javascript:void(0)" onclick="scrollToSection('ag')">
-                            7. Menu Functions
+                            Menu Functions
                         </a>
                         <ul class="innerItems">
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ag1')">
-                                    a. Add Custom Class to 'li' in Menu
+                                    Add Custom Class to 'li' in Menu
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ag2')">
-                                    b. Add Custom Class to 'menu anchor' in Menu
+                                    Add Custom Class to 'menu anchor' in Menu
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ag3')">
-                                    c. Override 'Submenu' class in Menu
+                                    Override 'Submenu' class in Menu
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ag4')">
-                                    d. Add 'Caret for Submenu' in Menu
+                                    Add 'Caret for Submenu' in Menu
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li data-topic="Register Sidebar">
                         <a href="javascript:void(0)" onclick="scrollToSection('ah')">
-                            8. Register Sidebar
+                            Register Sidebar
                         </a>
                     </li>
                     <li data-topic="Create Shortcode">
                         <a href="javascript:void(0)" onclick="scrollToSection('ai')">
-                            9. Create Shortcode
+                            Create Shortcode
                         </a>
                     </li>
                     <li data-topic="Get Categories & Sub Categories of Posts">
                         <a href="javascript:void(0)" onclick="scrollToSection('aj')">
-                            10. Get Categories & Sub Categories of Posts
+                            Get Categories & Sub Categories of Posts
                         </a>
                     </li>
                     <li data-topic="Wocommerce">
                         <a href="javascript:void(0)" onclick="scrollToSection('ak')">
-                            11. Wocommerce
+                            Wocommerce
                         </a>
                         <ul class="innerItems">
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ak1')">
-                                    a. Redirect after Login & Registration
+                                    Redirect after Login & Registration
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ak2')">
-                                    b. Custom Woocommerce Login
+                                    Custom Woocommerce Login
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ak3')">
-                                    b. Custom Woocommerce Login & registration Form
+                                    Custom Woocommerce Login & registration Form
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ak4')">
-                                    c. Logout From Woocommerce
+                                    Logout From Woocommerce
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ak5')">
-                                    d. Remove links of single products from products listing
+                                    Remove links of single products from products listing
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" onclick="scrollToSection('ak6')">
-                                    e. Remove/Reduce Password Security
+                                    Remove/Reduce Password Security
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li data-topic="Get file size">
                         <a href="javascript:void(0)" onclick="scrollToSection('al')">
-                            12. Get file size
+                            Get file size
                         </a>
                     </li>
                     <li data-topic="Upload Files from Fronend in wordpress using Ajax">
                         <a href="javascript:void(0)" onclick="scrollToSection('am')">
-                            13. Upload Files from Fronend in wordpress using Ajax
+                            Upload Files from Fronend in wordpress using Ajax
                         </a>
                     </li>
                     <li data-topic="Register Custom Post">
                         <a href="javascript:void(0)" onclick="scrollToSection('an')">
-                            13. Get Custom Post using wp-query
+                            Get Custom Post using wp-query
                         </a>
                     </li>
                     <li data-topic="Get Custom Post using wp-query">
                         <a href="javascript:void(0)" onclick="scrollToSection('ao')">
-                            14. Get Custom Post using wp-query
+                            Get Custom Post using wp-query
                         </a>
                     </li>
                     <li data-topic="Check is Valid Business Emails">
                         <a href="javascript:void(0)" onclick="scrollToSection('ap')">
-                            15. Check is Valid Business Emails
+                            Check is Valid Business Emails
                         </a>
                     </li>
 
@@ -194,29 +231,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="ap_right_box">
             <div class="inner_box">
-                <div class="ap_breadCrumbs">
-                    <p>
-                        Home > <span id="changeTopic">GettingStarted</span>
-                    </p>
-
-                    <div id="mobileHamburger">
-                        <div class="hamburger" id="hamburger-1">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="themeDownloadMessage">
-                    <p>
-                        Download a basic Custom Theme from -> <a href="javascript:void(0);" class="download_popup" data-bs-toggle="modal" data-bs-target="#exampleModal_download">Download</a>
-                    </p>
-                </div>
-
                 <div class="right">
-                    <ul>
 
+                    <div class="top_hdng">
+                        <h3 class="hdng">
+                            Get started with JN Snippets
+                        </h3>
+                        <p>
+                            JN Snippets is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
+                        </p>
+                    </div>
+
+                    <ul>
                         <!--- getting content on front end --->
                         <li id="aa">
                             <div>
@@ -407,8 +433,8 @@ foreach ( $terms as $term ) {
                                     <pre class="line-numbers">
 <code class="language-php">//first need to register menu in function file  
 function register_snipshot_menu() {
-   register_nav_menu('header-menu',__( 'header' ));
-   register_nav_menu('footer-menu',__( 'footer' ));
+register_nav_menu('header-menu',__( 'header' ));
+register_nav_menu('footer-menu',__( 'footer' ));
 }
 
 add_action( 'init' , 'register_snipshot_menu' );
@@ -448,12 +474,12 @@ add_filter ( 'nav_menu_css_class', 'add_class_to_menu_list', 10, 4 );
 function add_class_to_menu_list ( $classes, $item, $args, $depth ){
     if ($args->theme_location == 'header') { 
     /**** according to theme location *****/
-      $classes[] = 'gc-nav-item'; 
+    $classes[] = 'gc-nav-item'; 
     }
     
     if ($args->theme_location == 'sidebar') { 
     /**** according to theme location *****/
-      $classes[] = 'gc-sidebar-item'; 
+    $classes[] = 'gc-sidebar-item'; 
     }
     return $classes;
 }
@@ -484,7 +510,7 @@ function add_class_to_list_anchor($atts, $item, $args, $depth) {
     /**** according to theme location *****/
         $atts['class'] = "gc-nav-link";
     }
-  return $atts;
+return $atts;
 }
 </code>
                                 </pre>
@@ -741,15 +767,15 @@ add_action('woocommerce_registration_redirect', 'ap_registration_redirect_wc', 2
                                 <span class="function">
                                     <pre class="line-numbers">
 <code class="language-php">/* Shortcode for woocommerce login  */
-  
+
 add_shortcode( 'wc_login_form_jags', 'jags_separate_login_form' );
-  
+
 function jags_separate_login_form() {
-   if ( is_admin() ) return;
-   if ( is_user_logged_in() ) return; 
-   ob_start();
-   woocommerce_login_form( array( 'redirect' => 'https://socialx22.sg-host.com/' ) );
-   return ob_get_clean();
+if ( is_admin() ) return;
+if ( is_user_logged_in() ) return; 
+ob_start();
+woocommerce_login_form( array( 'redirect' => 'https://socialx22.sg-host.com/' ) );
+return ob_get_clean();
 }
 </code>
                                 </pre>
@@ -1010,18 +1036,18 @@ function snipshot_theme_post_types()
             'all_items' => 'All Media',
             'singular_name' => 'Media',
         ),
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'show_in_nav_menus' => true,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
         'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'comments', 'post-formats', 'revisions','excerpt' ),
-		'hierarchical' => false,
-		'has_archive' => 'media',
-		'menu_icon' => 'dashicons-calendar',
-		'taxonomies' => array('media-category'),
+        'hierarchical' => false,
+        'has_archive' => 'media',
+        'menu_icon' => 'dashicons-calendar',
+        'taxonomies' => array('media-category'),
         'rewrite'   => array( 'slug' => false, 'with_front' => false ),  
-		'menu_icon' => 'dashicons-calendar',
+        'menu_icon' => 'dashicons-calendar',
     ));
 }
 add_action('init', 'snipshot_theme_post_types');;
@@ -1105,131 +1131,131 @@ if ($total_pages > 1){
                                     <pre class="line-numbers">
 <code class="language-php">// Code for Valid Business Mails
 function is_business_email($email){
-	if(preg_match('/@hotmail.com/i', $email) ||
-		preg_match('/@gmail.com/i', $email) ||
-		preg_match('/@yahoo.co/i', $email) ||
-		preg_match('/@yahoo.com/i', $email) ||
-		preg_match('/@mailinator.com/i', $email) ||
-		preg_match('/@gmail.co.in/i', $email) ||
-		preg_match('/@aol.com/i', $email) ||
-		preg_match('/@yandex.com/i', $email) ||
-		preg_match('/@msn.com/i', $email) ||
-		preg_match('/@gawab.com/i', $email) ||
-		preg_match('/@inbox.com/i', $email) ||
-		preg_match('/@gmx.com/i', $email) ||
-		preg_match('/@rediffmail.com/i', $email) ||
-		preg_match('/@in.com/i', $email) ||
-		preg_match('/@live.com/i', $email) ||
-		preg_match('/@hotmail.co.uk/i', $email) ||
-		preg_match('/@hotmail.fr/i', $email) ||
-		preg_match('/@yahoo.fr/i', $email) ||
-		preg_match('/@wanadoo.fr/i', $email) ||
-		preg_match('/@wanadoo.fr/i', $email) ||
-		preg_match('/@comcast.net/i', $email) ||
-		preg_match('/@yahoo.co.uk/i', $email) ||
-		preg_match('/@yahoo.com.br/i', $email) ||
-		preg_match('/@yahoo.co.in/i', $email) ||
-		preg_match('/@rediffmail.com/i', $email) ||
-		preg_match('/@free.fr/i', $email) ||
-		preg_match('/@gmx.de/i', $email) ||
-		preg_match('/@gmx.de/i', $email) ||
-		preg_match('/@yandex.ru/i', $email) ||
-		preg_match('/@ymail.com/i', $email) ||
-		preg_match('/@libero.it/i', $email) ||
-		preg_match('/@outlook.com/i', $email) ||
-		preg_match('/@uol.com.br/i', $email) ||
-		preg_match('/@bol.com.br/i', $email) ||
-		preg_match('/@mail.ru/i', $email) ||
-		preg_match('/@cox.net/i', $email) ||
-		preg_match('/@hotmail.it/i', $email) ||
-		preg_match('/@sbcglobal.net/i', $email) ||
-		preg_match('/@sfr.fr/i', $email) ||
-		preg_match('/@live.fr/i', $email) ||
-		preg_match('/@verizon.net/i', $email) ||
-		preg_match('/@live.co.uk/i', $email) ||
-		preg_match('/@googlemail.com/i', $email) ||
-		preg_match('/@yahoo.es/i', $email) ||
-		preg_match('/@ig.com.br/i', $email) ||
-		preg_match('/@live.nl/i', $email) ||
-		preg_match('/@bigpond.com/i', $email) ||
-		preg_match('/@terra.com.br/i', $email) ||
-		preg_match('/@yahoo.it/i', $email) ||
-		preg_match('/@neuf.fr/i', $email) ||
-		preg_match('/@yahoo.de/i', $email) ||
-		preg_match('/@live.com/i', $email) ||
-		preg_match('/@yahoo.de/i', $email) ||
-		preg_match('/@rocketmail.com/i', $email) ||
-		preg_match('/@att.net/i', $email) ||
-		preg_match('/@laposte.net/i', $email) ||
-		preg_match('/@facebook.com/i', $email) ||
-		preg_match('/@bellsouth.net/i', $email) ||
-		preg_match('/@yahoo.in/i', $email) ||
-		preg_match('/@hotmail.es/i', $email) ||
-		preg_match('/@charter.net/i', $email) ||
-		preg_match('/@yahoo.ca/i', $email) ||
-		preg_match('/@yahoo.com.au/i', $email) ||
-		preg_match('/@rambler.ru/i', $email) ||
-		preg_match('/@hotmail.de/i', $email) ||
-		preg_match('/@tiscali.it/i', $email) ||
-		preg_match('/@shaw.ca/i', $email) ||
-		preg_match('/@yahoo.co.jp/i', $email) ||
-		preg_match('/@sky.com/i', $email) ||
-		preg_match('/@earthlink.net/i', $email) ||
-		preg_match('/@optonline.net/i', $email) ||
-		preg_match('/@freenet.de/i', $email) ||
-		preg_match('/@t-online.de/i', $email) ||
-		preg_match('/@aliceadsl.fr/i', $email) ||
-		preg_match('/@virgilio.it/i', $email) ||
-		preg_match('/@home.nl/i', $email) ||
-		preg_match('/@qq.com/i', $email) ||
-		preg_match('/@telenet.be/i', $email) ||
-		preg_match('/@me.com/i', $email) ||
-		preg_match('/@yahoo.com.ar/i', $email) ||
-		preg_match('/@tiscali.co.uk/i', $email) ||
-		preg_match('/@yahoo.com.mx/i', $email) ||
-		preg_match('/@gmx.net/i', $email) ||
-		preg_match('/@mail.com/i', $email) ||
-		preg_match('/@planet.nl/i', $email) ||
-		preg_match('/@tin.it/i', $email) ||
-		preg_match('/@live.it/i', $email) ||
-		preg_match('/@ntlworld.com/i', $email) ||
-		preg_match('/@arcor.de/i', $email) ||
-		preg_match('/@yahoo.co.id/i', $email) ||
-		preg_match('/@frontiernet.net/i', $email) ||
-		preg_match('/@hetnet.nl/i', $email) ||
-		preg_match('/@live.com.au/i', $email) ||
-		preg_match('/@yahoo.com.sg/i', $email) ||
-		preg_match('/@zonnet.nl/i', $email) ||
-		preg_match('/@club-internet.fr/i', $email) ||
-		preg_match('/@juno.com/i', $email) ||
-		preg_match('/@optusnet.com.au/i', $email) ||
-		preg_match('/@blueyonder.co.uk/i', $email) ||
-		preg_match('/@bluewin.ch/i', $email) ||
-		preg_match('/@skynet.be/i', $email) ||
-		preg_match('/@sympatico.ca/i', $email) ||
-		preg_match('/@windstream.net/i', $email) ||
-		preg_match('/@mac.com/i', $email) ||
-		preg_match('/@centurytel.net/i', $email) ||
-		preg_match('/@chello.nl/i', $email) ||
-		preg_match('/@live.ca/i', $email) ||
-		preg_match('/@aim.com/i', $email) ||
-		preg_match('/@bigpond.net.au/i', $email))
-	{
-		return false; // It's a publicly available email address
-	}
-	else{
-		return true; // It's probably a company email address
-	}
+    if(preg_match('/@hotmail.com/i', $email) ||
+        preg_match('/@gmail.com/i', $email) ||
+        preg_match('/@yahoo.co/i', $email) ||
+        preg_match('/@yahoo.com/i', $email) ||
+        preg_match('/@mailinator.com/i', $email) ||
+        preg_match('/@gmail.co.in/i', $email) ||
+        preg_match('/@aol.com/i', $email) ||
+        preg_match('/@yandex.com/i', $email) ||
+        preg_match('/@msn.com/i', $email) ||
+        preg_match('/@gawab.com/i', $email) ||
+        preg_match('/@inbox.com/i', $email) ||
+        preg_match('/@gmx.com/i', $email) ||
+        preg_match('/@rediffmail.com/i', $email) ||
+        preg_match('/@in.com/i', $email) ||
+        preg_match('/@live.com/i', $email) ||
+        preg_match('/@hotmail.co.uk/i', $email) ||
+        preg_match('/@hotmail.fr/i', $email) ||
+        preg_match('/@yahoo.fr/i', $email) ||
+        preg_match('/@wanadoo.fr/i', $email) ||
+        preg_match('/@wanadoo.fr/i', $email) ||
+        preg_match('/@comcast.net/i', $email) ||
+        preg_match('/@yahoo.co.uk/i', $email) ||
+        preg_match('/@yahoo.com.br/i', $email) ||
+        preg_match('/@yahoo.co.in/i', $email) ||
+        preg_match('/@rediffmail.com/i', $email) ||
+        preg_match('/@free.fr/i', $email) ||
+        preg_match('/@gmx.de/i', $email) ||
+        preg_match('/@gmx.de/i', $email) ||
+        preg_match('/@yandex.ru/i', $email) ||
+        preg_match('/@ymail.com/i', $email) ||
+        preg_match('/@libero.it/i', $email) ||
+        preg_match('/@outlook.com/i', $email) ||
+        preg_match('/@uol.com.br/i', $email) ||
+        preg_match('/@bol.com.br/i', $email) ||
+        preg_match('/@mail.ru/i', $email) ||
+        preg_match('/@cox.net/i', $email) ||
+        preg_match('/@hotmail.it/i', $email) ||
+        preg_match('/@sbcglobal.net/i', $email) ||
+        preg_match('/@sfr.fr/i', $email) ||
+        preg_match('/@live.fr/i', $email) ||
+        preg_match('/@verizon.net/i', $email) ||
+        preg_match('/@live.co.uk/i', $email) ||
+        preg_match('/@googlemail.com/i', $email) ||
+        preg_match('/@yahoo.es/i', $email) ||
+        preg_match('/@ig.com.br/i', $email) ||
+        preg_match('/@live.nl/i', $email) ||
+        preg_match('/@bigpond.com/i', $email) ||
+        preg_match('/@terra.com.br/i', $email) ||
+        preg_match('/@yahoo.it/i', $email) ||
+        preg_match('/@neuf.fr/i', $email) ||
+        preg_match('/@yahoo.de/i', $email) ||
+        preg_match('/@live.com/i', $email) ||
+        preg_match('/@yahoo.de/i', $email) ||
+        preg_match('/@rocketmail.com/i', $email) ||
+        preg_match('/@att.net/i', $email) ||
+        preg_match('/@laposte.net/i', $email) ||
+        preg_match('/@facebook.com/i', $email) ||
+        preg_match('/@bellsouth.net/i', $email) ||
+        preg_match('/@yahoo.in/i', $email) ||
+        preg_match('/@hotmail.es/i', $email) ||
+        preg_match('/@charter.net/i', $email) ||
+        preg_match('/@yahoo.ca/i', $email) ||
+        preg_match('/@yahoo.com.au/i', $email) ||
+        preg_match('/@rambler.ru/i', $email) ||
+        preg_match('/@hotmail.de/i', $email) ||
+        preg_match('/@tiscali.it/i', $email) ||
+        preg_match('/@shaw.ca/i', $email) ||
+        preg_match('/@yahoo.co.jp/i', $email) ||
+        preg_match('/@sky.com/i', $email) ||
+        preg_match('/@earthlink.net/i', $email) ||
+        preg_match('/@optonline.net/i', $email) ||
+        preg_match('/@freenet.de/i', $email) ||
+        preg_match('/@t-online.de/i', $email) ||
+        preg_match('/@aliceadsl.fr/i', $email) ||
+        preg_match('/@virgilio.it/i', $email) ||
+        preg_match('/@home.nl/i', $email) ||
+        preg_match('/@qq.com/i', $email) ||
+        preg_match('/@telenet.be/i', $email) ||
+        preg_match('/@me.com/i', $email) ||
+        preg_match('/@yahoo.com.ar/i', $email) ||
+        preg_match('/@tiscali.co.uk/i', $email) ||
+        preg_match('/@yahoo.com.mx/i', $email) ||
+        preg_match('/@gmx.net/i', $email) ||
+        preg_match('/@mail.com/i', $email) ||
+        preg_match('/@planet.nl/i', $email) ||
+        preg_match('/@tin.it/i', $email) ||
+        preg_match('/@live.it/i', $email) ||
+        preg_match('/@ntlworld.com/i', $email) ||
+        preg_match('/@arcor.de/i', $email) ||
+        preg_match('/@yahoo.co.id/i', $email) ||
+        preg_match('/@frontiernet.net/i', $email) ||
+        preg_match('/@hetnet.nl/i', $email) ||
+        preg_match('/@live.com.au/i', $email) ||
+        preg_match('/@yahoo.com.sg/i', $email) ||
+        preg_match('/@zonnet.nl/i', $email) ||
+        preg_match('/@club-internet.fr/i', $email) ||
+        preg_match('/@juno.com/i', $email) ||
+        preg_match('/@optusnet.com.au/i', $email) ||
+        preg_match('/@blueyonder.co.uk/i', $email) ||
+        preg_match('/@bluewin.ch/i', $email) ||
+        preg_match('/@skynet.be/i', $email) ||
+        preg_match('/@sympatico.ca/i', $email) ||
+        preg_match('/@windstream.net/i', $email) ||
+        preg_match('/@mac.com/i', $email) ||
+        preg_match('/@centurytel.net/i', $email) ||
+        preg_match('/@chello.nl/i', $email) ||
+        preg_match('/@live.ca/i', $email) ||
+        preg_match('/@aim.com/i', $email) ||
+        preg_match('/@bigpond.net.au/i', $email))
+    {
+        return false; // It's a publicly available email address
+    }
+    else{
+        return true; // It's probably a company email address
+    }
 }
 function custom_email_validation_filter($result, $tag) {
-	$tag = new WPCF7_Shortcode( $tag );
-	if ( 'email' == $tag->name ) {
-		$the_value = isset( $_POST['email'] ) ? trim( $_POST['email'] ) : "";
-		if(!is_business_email($the_value)){
-			$result->invalidate( $tag, "Please enter a valid business email" );
-		}
-	}
-	return $result;
+    $tag = new WPCF7_Shortcode( $tag );
+    if ( 'email' == $tag->name ) {
+        $the_value = isset( $_POST['email'] ) ? trim( $_POST['email'] ) : "";
+        if(!is_business_email($the_value)){
+            $result->invalidate( $tag, "Please enter a valid business email" );
+        }
+    }
+    return $result;
 }
 add_filter( 'wpcf7_validate_email', 'custom_email_validation_filter', 10, 2 );
 add_filter( 'wpcf7_validate_email*', 'custom_email_validation_filter', 10, 2 );
@@ -1243,13 +1269,6 @@ add_filter( 'wpcf7_validate_email*', 'custom_email_validation_filter', 10, 2 );
             </div>
         </div>
 
-        <!-- Copyright Box -->
-        <div class="copyRightBox">
-            <p>
-                &copy; All Right Reserved &reg; 2023 by
-                <a href="https://github.com/chauhan07/" target="_blank">Aditya Chauhan</a>
-            </p>
-        </div>
 
         <!-- Modal Show Button -->
         <div class="formButton">
@@ -1271,7 +1290,7 @@ add_filter( 'wpcf7_validate_email*', 'custom_email_validation_filter', 10, 2 );
                         <div class="successMessage">
                             Your Message has been sent.
                         </div>
-                        <form class="ap_form" method="POST" onsubmit="formSubmitFun(event)" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbyt75q3PLoV36R3aUgmagvqBokoJaXj6mdnlSg9HwIpQ-hOEUOG6Kx3AYpFNv93hmfZDg/exec">
+                        <form class="ap_form" method="POST" onsubmit="formSubmitFun(event)" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzrErSoIcF7eF4-fM0GBkBWs9JHHXoHikSfja2WgP77CkOkO4FxWSiEXLze_drOplOBIw/exec">
                             <div class="row">
                                 <div class="col-12">
                                     <label>
@@ -1319,28 +1338,11 @@ add_filter( 'wpcf7_validate_email*', 'custom_email_validation_filter', 10, 2 );
                 </div>
             </div>
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal_download" tabindex="-1" aria-labelledby="exampleModalLabel_download" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel_download">Downloading</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Downloading will automatically start in few seconds...</p>
-                        <span id="timer">
-                            5
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="./assets/function.js"></script>
+</section>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./assets/confetti/tsparticles.confetti.bundle.min.js"></script>
+<script src="./assets/function.js"></script>
 
 </body>
 

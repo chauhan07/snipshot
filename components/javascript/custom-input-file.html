@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDGGTKJ');</script>
+<!-- End Google Tag Manager -->
+	
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/fav.png">
+
+    <!-- meta tags -->
+    <title>SnipShot | Shopify Snippets</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://chauhan07.github.io/snipshot/">
+    <meta name="robots" content="index,follow">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="SnipShot - Shopify Code Snippets">
+    <meta property="og:description" content="Find the most useful Shopify code snippets to help you build your website. Get easy-to-implement code solutions for common Shopify tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your Shopify development with our collection of code snippets.">
+
+    <meta property="og:image" content="https://chauhan07.github.io/snipshot/">
+    <meta property="og:url" content="https://chauhan07.github.io/snipshot/assets/images/og_image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/style.css" rel="stylesheet">
+    <!-- <link href="../../assets/css/style.css" rel="stylesheet"> -->
+    <link href="../../assets/prism/prism.css" rel="stylesheet">
+    <link href="../../assets/line-number/line-number.css" rel="stylesheet">
+    <script src="../../assets/prism/prism.js"></script>
+    <script src="../../assets/line-number/line-number.js"></script>
+
+</head>
+
+<body>
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDGGTKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<section class="main">
+    <header class="container-fluid  darkHdr">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-flex align-items-center">
+                    <div class="inner d-flex justify-content-center justify-content-sm-start">
+                        <h1 class="logoText">
+                            <a href="./">
+                                <span>&lt;</span> SnipShot
+                                <span>/&gt;</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-sm-flex">
+                    <div class="inner d-flex justify-content-end social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/chauhan07" target="_blank">
+                                    <img src="../../assets/images/github.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/adityachauhan" target="_blank">
+                                    <img src="../../assets/images/codepen.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ad1tya.rana/" target="_blank">
+                                    <img src="../../assets/images/instagram.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="ap_wrapper">
+        <div class="ap_newDesign left" id="sideBar">
+            <div class="inner">
+                <ul>
+                    <li class="general">
+                        <img src="../../assets/images/book.png" alt="">Getting Started
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="../../javascript.html">
+                            Basic Function
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./custom-input-file.html">
+                            Input File
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./popup.html">
+                            Popup
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./form-validation.html">
+                            Forms Validation
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="ap_right_box">
+            <div class="inner_box">
+                <div class="right">
+
+                    <div class="top_hdng">
+                        <h3 class="hdng">
+                            Get started with JN Snippets
+                        </h3>
+                        <p>
+                            Step-by-Step Guide to Implement and Use the Custom File Upload Code
+                        </p>
+                    </div>
+
+                    <ul>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 1: Add HTML Structure</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    Copy and paste the following HTML code into your webpage where you want the file upload feature to appear.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">&lt;div class="ap_label_wrap">
+    &lt;label class="customInput_ap" for="uploadInput">
+        &lt;input type="file" name="" id="uploadInput">
+        &lt;div>
+            &lt;img src="https://i.imgur.com/QJyy55M.png" alt="">
+            &lt;span class="fileName">
+                Drag & Drop Files Here
+            &lt;/span>
+            &lt;span>
+                OR
+            &lt;/span>
+            &lt;span>
+                Browse Files
+            &lt;/span>
+        &lt;/div>
+    &lt;/label>
+&lt;/div>
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 2: Add CSS Styling</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    Include the following CSS either in your CSS file or within a &lt;style> tag in your HTML &lt;head> section.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-css">label.customInput_ap {
+    width: 100%;
+    padding: 40px 15px;
+    background: #fff;
+    border: 3px dashed #949C9D;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+label.customInput_ap input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0!important;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.customInput_ap div img {
+    width: 35px;
+}
+
+.customInput_ap div span:nth-child(2) {
+    font-size: 18px;
+    display: block;
+    margin-top: 12px;
+}
+
+.customInput_ap div span:nth-child(3) {
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+}
+
+.customInput_ap div span:nth-child(4) {
+    display: block;
+    width: 180px;
+    margin: 20px auto 0;
+    background: #fff;
+    border: 1px solid #F5AD02;
+    height: 55px;
+    line-height: 52px;
+    color: #F5AD02;
+    font-size: 17px;
+    border-radius: 7px;
+}
+
+.ap_label_wrap {
+    background: #F8F8FA;
+    padding: 30px;
+    width: 950px;
+    margin: 0 auto;
+}
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 3: Add JavaScript Functionality:</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    Add the following JavaScript code at the end of your HTML document, just before the closing &body> tag, or within a separate JavaScript file.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-js">document.getElementById('uploadInput').addEventListener('change', function() {
+    var file = this.files[0];
+    var filename = file ? file.name : '';
+    var fileNameSpan = document.querySelector('.fileName');
+    var allowedExtensions = /(\.png|\.jpg|\.jpeg|\.pdf)$/i;
+
+    if (filename === '') {
+        fileNameSpan.textContent = "Drag & Drop Files Here";
+    } else if (!allowedExtensions.exec(filename)) {
+        fileNameSpan.textContent = "Invalid file type. Only PNG, JPG, JPEG, PDF are allowed.";
+        this.value = ''; // Clear the input
+    } else {
+        fileNameSpan.textContent = filename;
+    }
+});
+</code>
+                                </pre>
+                                </span>
+
+                                <p class="topicDesc">
+                                    By following these steps, you will successfully implement and use the custom file upload feature on your webpage.
+                                </p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Show Button -->
+        <div class="formButton">
+            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="../../assets/images/contact.png">
+            </a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!--modal-dialog-centered , modal-lg-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="successMessage">
+                            Your Message has been sent.
+                        </div>
+                        <form class="ap_form" method="POST" onsubmit="formSubmitFun(event)" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzrErSoIcF7eF4-fM0GBkBWs9JHHXoHikSfja2WgP77CkOkO4FxWSiEXLze_drOplOBIw/exec">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label>
+                                        Name
+                                        <input type="text" class="form-control" required name="Name">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Email
+                                        <input type="email" class="form-control" required name="Email">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Message
+                                        <textarea class="form-control" required name="Message"></textarea>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        <input type="submit" class="ap_submit" value="Send Message">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="ap_loader">
+                                <div class="lds-spinner">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/confetti/tsparticles.confetti.bundle.min.js"></script>
+    <script src="../../assets/function.js"></script>
+
+</body>
+
+</html>
+

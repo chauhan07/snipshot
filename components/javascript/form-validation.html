@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDGGTKJ');</script>
+<!-- End Google Tag Manager -->
+	
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/fav.png">
+
+    <!-- meta tags -->
+    <title>SnipShot | Shopify Snippets</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://chauhan07.github.io/snipshot/">
+    <meta name="robots" content="index,follow">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="SnipShot - Shopify Code Snippets">
+    <meta property="og:description" content="Find the most useful Shopify code snippets to help you build your website. Get easy-to-implement code solutions for common Shopify tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your Shopify development with our collection of code snippets.">
+
+    <meta property="og:image" content="https://chauhan07.github.io/snipshot/">
+    <meta property="og:url" content="https://chauhan07.github.io/snipshot/assets/images/og_image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/style.css" rel="stylesheet">
+    <!-- <link href="../../assets/css/style.css" rel="stylesheet"> -->
+    <link href="../../assets/prism/prism.css" rel="stylesheet">
+    <link href="../../assets/line-number/line-number.css" rel="stylesheet">
+    <script src="../../assets/prism/prism.js"></script>
+    <script src="../../assets/line-number/line-number.js"></script>
+
+</head>
+
+<body>
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDGGTKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<section class="main">
+    <header class="container-fluid darkHdr">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-flex align-items-center">
+                    <div class="inner d-flex justify-content-center justify-content-sm-start">
+                        <h1 class="logoText">
+                            <a href="./">
+                                <span>&lt;</span> SnipShot
+                                <span>/&gt;</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-sm-flex">
+                    <div class="inner d-flex justify-content-end social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/chauhan07" target="_blank">
+                                    <img src="../../assets/images/github.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/adityachauhan" target="_blank">
+                                    <img src="../../assets/images/codepen.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ad1tya.rana/" target="_blank">
+                                    <img src="../../assets/images/instagram.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="ap_wrapper">
+        <div class="ap_newDesign left" id="sideBar">
+            <div class="inner">
+                <ul>
+                    
+                    <li class="general">
+                        <img src="../../assets/images/book.png" alt="">Getting Started
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="../../javascript.html">
+                            Basic Function
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./custom-input-file.html">
+                            Input File
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./popup.html">
+                            Popup
+                        </a>
+                    </li>
+                    <li data-topic="Basic Functions">
+                        <a href="./form-validation.html">
+                            Forms Validation
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="ap_right_box">
+            <div class="inner_box">
+                <div class="right">
+
+                    <div class="top_hdng">
+                        <h3 class="hdng">
+                            Get started with JN Snippets
+                        </h3>
+                        <p>
+                            Step-by-Step Guide to JS Form Validation
+                        </p>
+                    </div>
+
+                    <ul>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Step 1: Structure</span>
+                                </h3>
+                                <p class="topicDesc">
+                                    Wrap each form input element (like `<b>&lt;input>`, `&lt;select>`, `&lt;textarea></b>`) in a `<b>&lt;label></b>` with the class jn-input-wrap.
+                                    <br>
+                                    Each input element should be inside its respective `<b>&lt;label></b>`.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">// Buttons for Popup
+&lt;label class="jn-input-wrap">
+    &lt;input type="text" placeholder="Name" />
+&lt;/label>
+</code>
+                                </pre>
+                                </span>
+                                <p class="topicDesc">
+                                    <strong>Validation Conditions:</strong>
+                                    <br>
+                                    <br>
+                                    1. Text, Password, Select, Search: <br>
+                                    <small>These fields are validated for non-emptiness.</small>
+
+                                    <br><br>
+                                    2. Email:
+                                    <br>
+                                    <small>Must be in a valid email format (name@example.com).</small>
+
+                                    <br><br>
+                                    3. Phone Number:
+                                    <br>
+                                    <small>Exactly 10 digits are required.</small>
+
+                                    <br><br>
+                                    4. URL:
+                                    <br>
+                                    <small>Must start with http:// or https://.</small>
+
+                                    <br><br>
+                                    5. Number:
+                                    <br>
+                                    <small>Valid positive integer.</small>
+
+                                    <br><br>
+                                    6. File:
+                                    <br>
+                                    <small>Accepts specific file types like PNG, JPG, GIF, PDF.</small>
+
+                                    <br><br>
+                                    7. Error Display:
+                                    <br>
+                                    <small>Errors can be shown either by displaying error messages or by highlighting fields with a red outline, controlled by <b>showErrorMessages</b> boolean.</small>
+
+                                    <br><br>
+                                    Implementation in JavaScript:
+
+                                    <br>
+                                    The script attaches a submit event listener to each form.
+                                    <br>
+                                    On form submission, it prevents the default behavior (event.preventDefault()) and validates each field based on its type.
+                                    <br>
+                                    Errors are appended as messages inside the respective label or shown via red outline.
+                                    <br><br>
+
+                                    <strong>Utility Functions:</strong>
+                                    <br>
+                                    Various helper functions (isValidEmail, isValidPhoneNumber, isValidURL, etc.) validate input values against predefined regular expressions.
+                                </p>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Example Implementation:</span>
+                                </h3>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-html">&lt;!DOCTYPE html>
+    &lt;html lang="en">
+    &lt;head>
+      &lt;meta charset="UTF-8">
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+      &lt;title>Form Validation&lt;/title>
+    &lt;/head>
+    &lt;body>
+      &lt;h1 style="text-align: center">Form Validation&lt;/h1>
+      
+      &lt;section>
+        &lt;div class="container">
+          &lt;form>
+            &lt;!-- Your form inputs here -->
+          &lt;/form>
+        &lt;/div>
+      &lt;/section>
+    
+      &lt;script>
+        // Your validation JavaScript code here
+      &lt;/script>
+    &lt;/body>
+&lt;/html>
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <!--- getting content on front end --->
+                        <li id="above">
+                            <div>
+                                <h3>
+                                    <span class="text">Javascript</span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    To manage the validation functionality, use the following JavaScript:
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-js">// JavaScript Validation Library
+// Configuration options
+const showErrorMessages = true; // Set to true to show error messages, false to highlight with red outline only
+
+// Function to validate form fields
+function validateForm(event) {
+    event.preventDefault(); // Prevent form submission initially
+
+    const form = event.target; // Get the form that was submitted
+    clearErrorMessages(form);
+    clearRedOutlines(form);
+
+    // Select input wrappers within the current form
+    const inputWraps = form.querySelectorAll(".jn-input-wrap");
+
+    let isValid = true;
+
+    // Iterate over each input wrapper
+    inputWraps.forEach((inputWrap) => {
+    const input = inputWrap.querySelector("input, select, textarea");
+
+    if (input) {
+        let inputType;
+        if (input.tagName == "SELECT" || input.tagName == "TEXTAREA") {
+        inputType = input.tagName.toLowerCase();
+        } else {
+        inputType = input.getAttribute("type");
+        }
+        const value = input.value.trim();
+
+        // Validate based on input type
+        switch (inputType) {
+        case "text":
+        case "password":
+        case "textarea":
+        case "select":
+        case "search": // Added 'search' type
+            if (value === "") {
+            if (showErrorMessages) {
+                appendError(inputWrap, "This field is required.");
+            } else {
+                addRedOutline(input);
+            }
+            isValid = false;
+            }
+            break;
+        case "email":
+            if (!isValidEmail(value)) {
+            if (showErrorMessages) {
+                appendError(
+                inputWrap,
+                "Please enter a valid email address."
+                );
+            } else {
+                addRedOutline(input);
+            }
+            isValid = false;
+            }
+            break;
+        case "tel":
+            if (!isValidPhoneNumber(value)) {
+            if (showErrorMessages) {
+                appendError(
+                inputWrap,
+                "Please enter a valid phone number (10 digits only)."
+                );
+            } else {
+                addRedOutline(input);
+            }
+            isValid = false;
+            }
+            break;
+        case "url":
+            if (!isValidURL(value)) {
+            if (showErrorMessages) {
+                appendError(inputWrap, "Please enter a valid URL.");
+            } else {
+                addRedOutline(input);
+            }
+            isValid = false;
+            }
+            break;
+        case "number":
+            if (!isValidNumber(value)) {
+            if (showErrorMessages) {
+                appendError(inputWrap, "Please enter a valid number.");
+            } else {
+                addRedOutline(input);
+            }
+            isValid = false;
+            }
+            break;
+        case "file":
+            const file = input.files[0];
+            if (!isValidFile(file)) {
+            if (showErrorMessages) {
+                appendError(
+                inputWrap,
+                "Please upload a valid file (PNG, JPG, GIF, PDF)."
+                );
+            } else {
+                addRedOutline(input);
+            }
+            isValid = false;
+            }
+            break;
+        case "date":
+        case "time":
+            if (value === "") {
+            if (showErrorMessages) {
+                appendError(inputWrap, "This field is required.");
+            } else {
+                addRedOutline(input);
+            }
+            isValid = false;
+            }
+            break;
+        case "radio":
+        case "checkbox":
+
+        const name = input.getAttribute("name");
+        const group = document.querySelectorAll(`input[name="${name}"]`);
+        const isChecked = Array.from(group).some((radio) => radio.checked);
+
+        if (!isChecked) {
+            if (showErrorMessages) {
+            appendError(inputWrap, "This option must be checked.");
+            } else {
+            group.forEach(radio => addRedOutline(radio));
+            }
+            isValid = false;
+        }
+            break;
+        default:
+            break;
+        }
+    }
+    });
+
+    // If form is valid, submit it
+    if (isValid) {
+    event.target.submit();
+    }
+}
+// Function to clear error messages within a specific form
+function clearErrorMessages(form) {
+    const errorMessages = form.querySelectorAll(".jn-input-wrap .error-message");
+    errorMessages.forEach((errorMessage) => {
+    errorMessage.remove();
+    });
+}
+
+// Function to append error message to input wrapper
+function appendError(inputWrap, errorMessageText) {
+    const errorMessage = document.createElement("div");
+    inputWrap.classList.add("error-wrap");
+    errorMessage.classList.add("error-message");
+    errorMessage.textContent = errorMessageText;
+    inputWrap.appendChild(errorMessage);
+}
+
+// Function to add red outline to input
+function addRedOutline(input) {
+    // input.classList.add("error-outline");
+    input.style.setProperty("outline", "1px solid #ff2200", "important");
+}
+
+
+// Function to clear red outlines within a specific form
+function clearRedOutlines(form) {
+    const inputs = form.querySelectorAll(".jn-input-wrap input, .jn-input-wrap select, .jn-input-wrap textarea");
+    inputs.forEach((input) => {
+    input.style.removeProperty("outline");
+    });
+}
+
+// Validation functions for specific input types
+
+function isValidEmail(email) {
+    // Regular expression for basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+function isValidPhoneNumber(phone) {
+    // Regular expression to match 10 digit phone number
+    const phoneRegex = /^\d{10}$/;
+    return phoneRegex.test(phone);
+}
+
+function isValidURL(url) {
+    // Regular expression for basic URL validation
+    const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+    return urlRegex.test(url);
+}
+
+function isValidNumber(number) {
+    // Regular expression for integer number validation
+    const numberRegex = /^\d+$/;
+    return numberRegex.test(number);
+}
+
+function isValidFile(file) {
+    // Check file type (example checks for PNG, JPG, GIF, PDF)
+    if (!file) return false;
+    const fileType = file.type;
+    return (
+    fileType === "image/png" ||
+    fileType === "image/jpeg" ||
+    fileType === "image/gif" ||
+    fileType === "application/pdf"
+    );
+}
+
+// Attach validation function to form submit event
+const forms = document.querySelectorAll("form");
+forms.forEach((form) => {
+    form.addEventListener("submit", validateForm);
+});
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Show Button -->
+        <div class="formButton">
+            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="../../assets/images/contact.png">
+            </a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!--modal-dialog-centered , modal-lg-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="successMessage">
+                            Your Message has been sent.
+                        </div>
+                        <form class="ap_form" method="POST" onsubmit="formSubmitFun(event)" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzrErSoIcF7eF4-fM0GBkBWs9JHHXoHikSfja2WgP77CkOkO4FxWSiEXLze_drOplOBIw/exec">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label>
+                                        Name
+                                        <input type="text" class="form-control" required name="Name">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Email
+                                        <input type="email" class="form-control" required name="Email">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Message
+                                        <textarea class="form-control" required name="Message"></textarea>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        <input type="submit" class="ap_submit" value="Send Message">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="ap_loader">
+                                <div class="lds-spinner">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/confetti/tsparticles.confetti.bundle.min.js"></script>
+    <script src="../../assets/function.js"></script>
+
+</body>
+
+</html>
+

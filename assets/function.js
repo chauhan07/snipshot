@@ -3,7 +3,6 @@ const elemItems = document.querySelectorAll(".left .inner ul li");
 elemItems.forEach(function (element) {
     element.addEventListener("click", function () {
         this.classList.add("active");
-        document.getElementById("changeTopic").innerText = this.dataset.topic;
 
         elemItems.forEach(function (el) {
             if (el !== this) {
@@ -13,11 +12,6 @@ elemItems.forEach(function (element) {
     });
 });
 
-
-document.getElementById("hamburger-1").addEventListener("click", function () {
-    this.classList.toggle("is-active");
-    document.getElementById("sideBar").classList.toggle("show")
-})
 
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
@@ -48,21 +42,102 @@ function formSubmitFun(event) {
     });
 }
 
-document.querySelector(".download_popup").addEventListener("click", function() {
-    const element = document.getElementById("timer");
-    var j = 5;
-    const download_interval = setInterval(function() {
-        j--;
-        element.innerHTML = j;
-        if (j == 0) {
-            var win = open("./download/jagsness_2.0.zip");
-            win.document.execCommand("SaveAs")
-            document.querySelector(".themeDownloadMessage").style.display = "none";
-            document.getElementById("exampleModal_download").style.display = "none";
-            document.getElementById("exampleModal_download").classList.remove("fade");
-            document.getElementById("exampleModal_download").classList.remove("show");
-            document.querySelector(".modal-backdrop").remove();
-            clearInterval(download_interval);
-        }
-    }, 1000);
-})
+
+
+// confetti
+
+function showPopup() {
+    const popup = document.querySelector('.jn_popup');
+    popup.classList.add('show');
+}
+
+function handleKeyPress(event) {
+    // Check if the pressed key is the 'Esc' key
+    if (event.keyCode === 27) {
+        // Select elements with the class 'modal_wrapper' and remove the 'show' class
+        document.querySelectorAll('.jn_popup').forEach(function(element) {
+        element.classList.remove('show');
+        });
+    }
+}
+
+// Add an event listener to the document to listen for key presses
+document.addEventListener('keydown', handleKeyPress);
+
+let hidePopup = document.querySelectorAll("[data-popup='close_modal']");
+hidePopup.forEach(element => {
+    // get which element hit 
+    let pCall = element.getAttribute("data-p-call");
+    console.log(pCall);
+
+    // set loop for all popups
+    element.addEventListener("click", function(){
+        let pTarget = document.querySelector(`.jn_popup[data-p-target='${pCall}']`);
+        pTarget.classList.remove("show");
+    });
+});
+
+document.addEventListener('click', function(e) {
+    // Check if the clicked element has the 'modal_wrapper' class
+    if (e.target.classList.contains('show')) {
+        // Select elements with the class 'modal_wrapper' and remove the 'show' class
+        document.querySelectorAll('.jn_popup').forEach(function(element) {
+            element.classList.remove('show');
+        });
+    }
+});
+  
+
+
+
+let confettieCheck = sessionStorage.getItem("setConfettie");
+console.log(confettieCheck);
+
+if(confettieCheck == null){
+    window.onload = showPopup;
+
+    const duration = 3.5 * 1000,
+    animationEnd = Date.now() + duration,
+    defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    function randomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+    }
+
+    const interval = setInterval(function() {
+    const timeLeft = animationEnd - Date.now();
+
+    if (timeLeft <= 0) {
+        return clearInterval(interval);
+    }
+
+    const particleCount = 50 * (timeLeft / duration);
+
+    // since particles fall down, start a bit higher than random
+    confetti(
+        Object.assign({}, defaults, {
+        particleCount,
+        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+        })
+    );
+    confetti(
+        Object.assign({}, defaults, {
+        particleCount,
+        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+        })
+    );
+    }, 250);
+    sessionStorage.setItem("setConfettie", true);
+}
+
+
+// add class on scroll
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 30) {
+        header.classList.add('darkHdrScroll');
+      } else {
+        header.classList.remove('darkHdrScroll');
+      }
+});
