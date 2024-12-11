@@ -987,3 +987,11 @@ footer p a:hover {
         transform: translateY(8px) rotate(45deg);
     }
 }
+b.npm_cmd {
+    display: block;
+    background: #2d2d2d;
+    padding: 15px;
+    color: #e5e5e5;
+    font-weight: normal;
+    font-size: 14px;
+}
