@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDGGTKJ');</script>
+<!-- End Google Tag Manager -->
+	
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./assets/images/fav.png">
+
+    <!-- meta tags -->
+    <title>SnipShot | Shopify Snippets</title>
+    <meta name="description" content="">
+    <link rel="canonical" href="https://chauhan07.github.io/snipshot/">
+    <meta name="robots" content="index,follow">
+
+    <!-- OG Tags -->
+    <meta property="og:title" content="SnipShot - Shopify Code Snippets">
+    <meta property="og:description" content="Find the most useful Shopify code snippets to help you build your website. Get easy-to-implement code solutions for common Shopify tasks, including customizing themes, adding functionality, and optimizing performance. Save time and improve your Shopify development with our collection of code snippets.">
+
+    <meta property="og:image" content="https://chauhan07.github.io/snipshot/">
+    <meta property="og:url" content="https://chauhan07.github.io/snipshot/assets/images/og_image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Bootstrap CSS -->
+    <link href="../../assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/style.css" rel="stylesheet">
+    <!-- <link href="./assets/css/style.css" rel="stylesheet"> -->
+    <link href="../../assets/prism/prism.css" rel="stylesheet">
+    <link href="../../assets/line-number/line-number.css" rel="stylesheet">
+    <script src="../../assets/prism/prism.js"></script>
+    <script src="../../assets/line-number/line-number.js"></script>
+
+</head>
+
+<body>
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDGGTKJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<section class="main">
+    <header class="container-fluid  darkHdr">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 d-flex align-items-center">
+                    <div class="inner d-flex justify-content-center justify-content-sm-start">
+                        <h1 class="logoText">
+                            <a href="../../index.html">
+                                <span>&lt;</span> SnipShot
+                                <span>/&gt;</span>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-sm-flex">
+                    <div class="inner d-flex justify-content-end social">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/chauhan07" target="_blank">
+                                    <img src="../../assets/images/github.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/adityachauhan" target="_blank">
+                                    <img src="../../assets/images/codepen.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ad1tya.rana/" target="_blank">
+                                    <img src="../../assets/images/instagram.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="ap_wrapper">
+        <div class="ap_newDesign left" id="sideBar">
+            <div class="inner">
+                <ul>
+                    <li class="general">
+                        <img src="./assets/images/book.png" alt="">Getting Started
+                    </li>
+                    <li data-topic="Install React">
+                        <a href="./signup.html#basic_info">
+                            Signup using Wordpress API’s
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="ap_right_box">
+            <div class="inner_box">
+                <div class="right">
+
+                    <div class="top_hdng">
+                        <h3 class="hdng">
+                            Get started with JN Snippets
+                        </h3>
+                        <p>
+                            JN Snippets is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.
+                        </p>
+                    </div>
+
+                    <ul>
+                        <!--- getting content on front end --->
+                        <li id="basic_info">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        Signup using Wordpress API’s
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    <strong>a). First we need to enable few option in wordpress</strong> <br/><br/>
+                                   <img src="../../assets/images/signup-img1.png" alt=""> <br/><br/>
+                                <strong>b). Create application password using main user’s profile<br/>
+                                Save application password which will be used in code in future.</strong> <br /><br/>
+                                <img src="../../assets/images/signup-img2.png" alt=""><br/><br/>
+                                <strong>Basic Sign up form with normal form validations</strong>                                
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-js">import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useNavigate , Link } from 'react-router-dom';
+//import module
+import { Helmet } from 'react-helmet-async';
+function RegisterForm({ siteUrl }) {
+const [responseMessage, setResponseMessage] = useState('');
+const [responseClass, setResponseClass] = useState('');
+const [loader, setLoader] = useState('');
+const navigate = useNavigate(); // Initialize useNavigate for redirects
+useEffect(() => {
+const token = localStorage.getItem('token');
+if (token) {
+navigate('/dashboard'); // Redirect to dashboard if token exists
+}
+}, [navigate]);
+const [getInputValues, holdInputValues] = useState({
+uName: '',
+fName: '',
+lName: '',
+eMail: '',
+pHone: '',
+pWord: '',
+cpWord: ''
+});
+
+const GetInputEvent = (event) => {
+const { name, value } = event.target;
+holdInputValues((prevVal) => {
+return {
+...prevVal,
+[name]: value,
+}
+})
+}
+
+function removeAllErrors() {
+setResponseMessage(false);
+setResponseClass(false);
+setLoader(false);
+}
+
+function redirectAfterFewSec() {
+navigate('/login');
+}
+
+const onSubmitForm = async (event) => {
+event.preventDefault();
+setLoader(true);
+
+// normal validation form field on the basis of empty
+for (let x in getInputValues) {
+if(!getInputValues[x]){
+setResponseMessage("Please fill all fields");
+setResponseClass("alert-danger");
+setLoader(false);
+setTimeout(removeAllErrors, 4000);
+return;
+}
+}
+
+// check if password and confirm password is same or not
+if(getInputValues.pWord !== getInputValues.cpWord){
+setResponseMessage("Password and Confirm Password is not same");
+setResponseClass("alert-danger");
+setTimeout(removeAllErrors, 4000);
+setLoader(false);
+return;
+}
+
+// axios
+try {
+const auth = btoa('main_admin:Ze5L lZ7I aOeb kmIc jD3c DZB9'); // Replace with your admin username and application
+password
+await axios.post(`${siteUrl}wp-json/wp/v2/users`, {
+username: getInputValues.uName,
+email: getInputValues.eMail,
+first_name: getInputValues.fName,
+last_name: getInputValues.lName,
+password: getInputValues.pWord,
+// roles: ['administrator'],
+},
+{
+headers: {
+Authorization: `Basic ${auth}`,
+},
+});
+setResponseMessage('Signup successful! You can now login.');
+setResponseClass("alert-success");
+setLoader(false);
+setTimeout(redirectAfterFewSec, 3000);
+} catch (error) {
+setResponseMessage('Signup Failed - Please try again');
+setResponseClass('alert-danger');
+setTimeout(removeAllErrors, 4000);
+setLoader(false);
+//console.error('Signup failed', error.response.data);
+//alert('Error signing up: ' + error.response.data.message);
+}
+}
+return (
+&lt;>
+    &lt;Helmet>
+        &lt;title>Register Page - Book my event&lt;/title>
+        &lt;meta name="description" content="This is the contactpage of Bookmyevent." />
+    &lt;/Helmet>
+    &lt;section className="common_banner_section pt_100 pb_100">
+        &lt;div className="common_banner_section_wrap">
+            &lt;div className="container">
+                &lt;div className="banner_heading">
+                    &lt;h1 className="hdng fs_55">Register&lt;/h1>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/section>
+    &lt;section className="contact_us_section pt_100 pb_100">
+        &lt;div className="contact_us_section_wrap">
+            &lt;div className="container">
+                &lt;div className="row d-flex justify-content-center">
+                    &lt;div className="col-md-6">
+                        &lt;form className="form_wrap" onSubmit={onSubmitForm}>
+                            &lt;div className="ap_form">
+                                {responseMessage && &lt;div className="col-12 col-md-12 mt-4">
+                                    &lt;div className={`alert ${responseClass}`}>{responseMessage}&lt;/div>
+                                &lt;/div>}
+                                &lt;div className="row">
+                                    &lt;div className="col-12 col-md-6">
+                                        &lt;input type="text" placeholder="First name" value={getInputValues.fName}
+                                            name="fName" onChange={GetInputEvent} />
+                                    &lt;/div>
+                                    &lt;div className="col-12 col-md-6">
+                                        &lt;input type="text" placeholder="Last Name" value={getInputValues.lName}
+                                            name="lName" onChange={GetInputEvent} />
+                                    &lt;/div>
+                                    &lt;div className="col-12 col-md-12">
+                                        &lt;input type="text" placeholder="Username" value={getInputValues.uName}
+                                            name="uName" onChange={GetInputEvent} />
+                                    &lt;/div>
+                                    &lt;div className="col-12 col-md-6">
+                                        &lt;input type="email" placeholder="Email" value={getInputValues.eMail}
+                                            name="eMail" onChange={GetInputEvent} />
+                                    &lt;/div>
+                                    &lt;div className="col-12 col-md-6">
+                                        &lt;input type="tel" placeholder="Phone" value={getInputValues.pHone} name="pHone"
+                                            onChange={GetInputEvent} />
+                                    &lt;/div>
+                                    &lt;div className="col-12 col-md-6">
+                                        &lt;input type="password" placeholder="Password" value={getInputValues.pWord}
+                                            name="pWord" onChange={GetInputEvent} />
+                                    &lt;/div>
+                                    &lt;div className="col-12 col-md-6">
+                                        &lt;input type="password" placeholder="Confirm Password"
+                                            value={getInputValues.cpWord} name="cpWord" onChange={GetInputEvent} />
+                                    &lt;/div>
+
+                                    &lt;div className="col-12">
+                                        &lt;div className="submitWrapper">
+                                            &lt;input type="submit" value="Signup" />
+                                            {loader &&
+                                            &lt;div className="loaderWrap">
+                                                &lt;span className="loader">&lt;/span>
+                                            &lt;/div>
+                                            }
+                                        &lt;/div>
+                                    &lt;/div>
+                                    &lt;div className="col-12 col-md-6">
+                                        &lt;p class="formUnderMessage">Already have an account ?
+                                            &lt;Link to="/login">Log in here&lt;/Link>
+                                        &lt;/p>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/form>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/section>
+&lt;/>
+);
+}
+export default RegisterForm;
+
+</code>
+</pre>
+</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Show Button -->
+        <div class="formButton">
+            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="./assets/images/contact.png">
+            </a>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!--modal-dialog-centered , modal-lg-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contact</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="successMessage">
+                            Your Message has been sent.
+                        </div>
+                        <form class="ap_form" method="POST" onsubmit="formSubmitFun(event)" name="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbzrErSoIcF7eF4-fM0GBkBWs9JHHXoHikSfja2WgP77CkOkO4FxWSiEXLze_drOplOBIw/exec">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label>
+                                        Name
+                                        <input type="text" class="form-control" required name="Name">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Email
+                                        <input type="email" class="form-control" required name="Email">
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        Message
+                                        <textarea class="form-control" required name="Message"></textarea>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label>
+                                        <input type="submit" class="ap_submit" value="Send Message">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="ap_loader">
+                                <div class="lds-spinner">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/confetti/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./assets/function.js"></script>
+
+</body>
+
+</html>
