@@ -227,6 +227,7 @@ p.topicDesc {
     font-size: 17px;
     color: #585858;
     padding: 20px 20px;
+    word-wrap: break-word;
 }
 p.topicDesc a {
     color: #000;
