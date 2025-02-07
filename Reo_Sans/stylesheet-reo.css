@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Reo Sans';
+    src: url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Reo Sans';
+    src: url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Reo Sans';
+    src: url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/ReoSansLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
