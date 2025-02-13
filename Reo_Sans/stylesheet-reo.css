@@ -27,3 +27,7 @@
     font-style: normal;
     font-display: swap;
 }
+
+input#Field-numberInput {
+    font-size: 35px;
+}
