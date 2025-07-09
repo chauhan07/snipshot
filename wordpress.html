@@ -229,6 +229,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             Change font family of stripe payment box while using woocommerce
                         </a>
                     </li>
+                    <li data-topic="disable plugin updates">
+                        <a href="javascript:void(0)" onclick="scrollToSection('ar')">
+                            Disable Plugin Updates
+                        </a>
+                    </li>
 
                 </ul>
             </div>
@@ -1311,6 +1316,46 @@ add_filter('wc_stripe_get_element_options', function ($options) {
     ];
     return $options;
 });
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="ar">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Disable Plugin updates
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Disable automatic updates for plugins in WordPress with the following code. Prevent unwanted changes to your website by disabling automatic updates for plugins. Implement this code to optimize your WordPress development process and maintain control over your website's functionality.
+
+                                    <br/><br/>
+                                    Example: https://cdn.jsdelivr.net/gh/chauhan07/snipshot/Reo_Sans/stylesheet-reo.css
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">// add this code in function.php
+function jn_disable_plugin_updates( $value ) {
+  //create an array of plugins you want to exclude from updates ( string composed by folder/main_file.php)
+   $pluginsNotUpdatable = [
+    'plugin1/plugin.php',
+    'plugin2/plugin2.php'
+  ];
+
+  if ( isset($value) && is_object($value) ) {
+    foreach ($pluginsNotUpdatable as $plugin) {
+        if ( isset( $value->response[$plugin] ) ) {
+            unset( $value->response[$plugin] );
+        }
+      }
+  }
+  return $value;
+}
+add_filter( 'site_transient_update_plugins', 'jn_disable_plugin_updates' );
 </code>
                                 </pre>
                                 </span>
