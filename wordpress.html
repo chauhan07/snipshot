@@ -1389,17 +1389,17 @@ add_action('woocommerce_created_customer', 'custom_save_user_role_field');
 
 function custom_add_user_role_field() {
     ?>
-    <p class="form-row form-row-wide">
-        <label for="user_role"><?php _e('Select Your Role', 'woocommerce'); ?> <span class="required">*</span></label>
-        <select name="user_role" id="user_role" required>
-            <option value="">Select a role</option>
-            <option value="customer">Customer</option>
-            <option value="subscriber">Subscriber</option>
-            <option value="shop_manager">Shop Manager</option>
-            <!-- Add or remove roles here -->
-        </select>
-    </p>
-    <?php
+    &lt;p class="form-row form-row-wide">
+        &lt;label for="user_role">&lt;?php _e('Select Your Role', 'woocommerce'); ?> &lt;span class="required">*&lt;/span>&lt;/label>
+        &lt;select name="user_role" id="user_role" required>
+            &lt;option value="">Select a role&lt;/option>
+            &lt;option value="customer">Customer&lt;/option>
+            &lt;option value="subscriber">Subscriber&lt;/option>
+            &lt;option value="shop_manager">Shop Manager&lt;/option>
+            &lt;!-- Add or remove roles here -->
+        &lt;/select>
+    &lt;/p>
+    &lt;?php
 }
 
 function custom_validate_user_role_field($username, $email, $validation_errors) {
