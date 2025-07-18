@@ -234,6 +234,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             Disable Plugin Updates
                         </a>
                     </li>
+                    <li data-topic="disable plugin updates">
+                        <a href="javascript:void(0)" onclick="scrollToSection('as')">
+                            Provide Role Option from froment
+                        </a>
+                    </li>
 
                 </ul>
             </div>
@@ -1356,6 +1361,60 @@ function jn_disable_plugin_updates( $value ) {
   return $value;
 }
 add_filter( 'site_transient_update_plugins', 'jn_disable_plugin_updates' );
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="as">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Provide Role Option from froment
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Provide users with the option to select their role from the frontend of your WordPress website with the following code. Enhance user experience by allowing users to choose their role during registration or profile updates. Implement this code to optimize your WordPress development process and improve your website's functionality.
+                                    <br/><br/>
+                                    To create a separate role in the backend other than the default WordPress roles., you can use any plugin
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">// Add role dropdown to WooCommerce registration and assign selected role
+add_action('woocommerce_register_form_start', 'custom_add_user_role_field');
+add_action('woocommerce_register_post', 'custom_validate_user_role_field', 10, 3);
+add_action('woocommerce_created_customer', 'custom_save_user_role_field');
+
+function custom_add_user_role_field() {
+    ?>
+    <p class="form-row form-row-wide">
+        <label for="user_role"><?php _e('Select Your Role', 'woocommerce'); ?> <span class="required">*</span></label>
+        <select name="user_role" id="user_role" required>
+            <option value="">Select a role</option>
+            <option value="customer">Customer</option>
+            <option value="subscriber">Subscriber</option>
+            <option value="shop_manager">Shop Manager</option>
+            <!-- Add or remove roles here -->
+        </select>
+    </p>
+    <?php
+}
+
+function custom_validate_user_role_field($username, $email, $validation_errors) {
+    $allowed_roles = ['customer', 'subscriber', 'shop_manager']; // only allow safe roles
+    if (empty($_POST['user_role']) || !in_array($_POST['user_role'], $allowed_roles)) {
+        $validation_errors->add('user_role_error', __('Please select a valid role.', 'woocommerce'));
+    }
+}
+
+function custom_save_user_role_field($customer_id) {
+    if (!empty($_POST['user_role']) && in_array($_POST['user_role'], ['customer', 'subscriber', 'shop_manager'])) {
+        $user = new WP_User($customer_id);
+        $user->set_role(sanitize_text_field($_POST['user_role']));
+    }
+}
 </code>
                                 </pre>
                                 </span>
