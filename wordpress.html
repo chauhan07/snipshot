@@ -244,6 +244,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             Custom Endpoints in My Account Page
                         </a>
                     </li>
+                    <li data-topic="Check User Role on Frontend">
+                        <a href="javascript:void(0)" onclick="scrollToSection('au')">
+                            Check User Role on Frontend
+                        </a>
+                    </li>
 
                 </ul>
             </div>
@@ -1476,6 +1481,36 @@ add_action( 'woocommerce_account_course_endpoint', 'tm_course_content' );
 // same here, if you want more content for other endpoints, just copy & paste the above function and change 'course' to your desired endpoint name
 
 // 5. Flush rewrite rules/permalinks on theme activation
+</code>
+                                </pre>
+                                </span>
+                            </div>
+                        </li>
+                        <li id="au">
+                            <div>
+                                <h3>
+                                    <span class="text">
+                                        # Check User Role on Frontend
+                                    </span>
+                                </h3>
+
+                                <p class="topicDesc">
+                                    Check the role of the current user on the frontend of your WordPress website with the following code. Enhance your website's functionality by conditionally displaying content based on user roles. Implement this code to optimize your WordPress development process and improve user experience.
+                                    <br/><br/>
+                                    This code snippet allows you to check if the current user has a specific role, such as 'administrator','customer' and perform actions accordingly.
+                                </p>
+
+                                <span class="function">
+                                    <pre class="line-numbers">
+<code class="language-php">// check the role of the user on frontend. 
+$user = wp_get_current_user();
+if ( in_array( 'administrator', (array) $user->roles ) ) {
+    echo 'The user has the Administrator role.';
+}
+
+if ( in_array( 'administrator', (array) $user->roles ) ||  in_array( 'customer', (array) $user->roles ) ) {
+    echo 'The user has the Administrator role.';
+}
 </code>
                                 </pre>
                                 </span>
